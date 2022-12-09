@@ -373,6 +373,7 @@ type属性值（同input的按钮系列）：
 目的：在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。
 
 常见属性：
+    
 ![27](htmlmage/biaodanyushuxing.png)
 
 > 注意:
