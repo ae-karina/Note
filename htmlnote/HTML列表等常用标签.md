@@ -12,6 +12,7 @@
 ```
 在网页中表示一组无顺序之分的列表
 ![2](htmlmage/norulelist.png)
+
 显示特点：
 - 列表的每一项前默认显示圆点标识
 - 样式一般用CSS来写
@@ -39,6 +40,7 @@
 </ul>
 ```
 一般用来布局
+
 ![3](htmlmage/buju.png)
 
 
@@ -53,7 +55,9 @@
 </ol>
 ```
 在网页中表示一组有顺序之分的列表
+
 ![4](htmlmage/rulelist.png)
+
 显示特点：
 - 列表的每一项前默认显示序号标识
 > 注意点：
@@ -76,7 +80,9 @@
 </dl>
 ```
 在网页的底部导航中通常会使用自定义列表实现
+
 ![5](htmlmage/autolist.png)
+
 显示特点：
 - dd前会默认显示缩进效果
 > 注意点：
@@ -110,7 +116,9 @@
 </table>
 ```
 在网页中以行+列的单元格的方式整齐展示和数据
+
 ![8](htmlmage/basebiaoqian.png)
+
 > 注意点：
 > - 标签的嵌套关系：table > tr > td 
 >- 表格的主要目的是用来显示特殊数据的
@@ -134,15 +142,16 @@
 
 ## 表格标题和表头单元格标签
 在表格中表示整体大标题和一列小标题
+
 ![12](htmlmage/biaotouintr.png)
 > 注意点：
 > - caption标签书写在table标签内部，只在表格里才有意义
 > - th标签书写在tr标签内部（用于替换td标签）
 
-### 表头单元格：
+### 表头单元格
 ![13](htmlmage/biaotou.png)
 
-### 表头单元格
+### 表格标题
 ```html
 <table>
     <caption>我是表格标题</caption>
@@ -152,6 +161,7 @@
 
 ## 表格的结构标签
 让表格的内容结构分组，突出表格的不同部分（头部、主体、底部），使语义更加清晰
+
 ![14](htmlmage/jiegousign.png)
 ![15](htmlmage/jiegoushow.png)
 > 注意点：
@@ -284,6 +294,7 @@ type属性值：
 显示用户点击的按钮
 
 type属性值（同input的按钮系列）：
+    
 ![25](htmlmage/buttonshuxing.png)
 >  注意点：
 > - 谷歌浏览器中button默认是提交按钮
