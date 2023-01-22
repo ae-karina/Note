@@ -263,5 +263,17 @@ VSCode中路径的快捷操作？
 <a href="#">more >> </ a>
 ```
 
+## 上标和下标
+sup上标
+    
+sub下标
 
+```html
+a <sup>2</sup> 
+b <sub>2</sub>
+```
+
+效果：
+
+![77](./htmlmage/77-xiaoguo.png)
 

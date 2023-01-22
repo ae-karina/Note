@@ -142,7 +142,7 @@
 ### 表头单元格：
 ![13](htmlmage/biaotou.png)
 
-### 表头单元格
+### 表格标题
 ```html
 <table>
     <caption>我是表格标题</caption>
@@ -173,7 +173,9 @@
    - 上下合并→只保留最上的，删除其他
    - 左右合并→只保留最左的，删除其他
 3. 给保留的单元格设置：跨行合并（rowspan）或者跨列合并（colspan）
+   
 ![16](htmlmage/hebingdanyuange.png)
+
 > 注意点：
 > - 只有同一个结构标签中的单元格才能合并，不能跨结构标签合并（不能跨：thead、tbody、tfoot）
 
@@ -284,7 +286,9 @@ type属性值：
 显示用户点击的按钮
 
 type属性值（同input的按钮系列）：
+
 ![25](htmlmage/buttonshuxing.png)
+
 >  注意点：
 > - 谷歌浏览器中button默认是提交按钮
 > - button标签是双标签，更便于包裹其他内容：文字、图片等
@@ -362,6 +366,7 @@ type属性值（同input的按钮系列）：
 目的：在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。
 
 常见属性：
+
 ![27](htmlmage/biaodanyushuxing.png)
 
 > 注意:
