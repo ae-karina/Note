@@ -11,7 +11,9 @@
 </ul>
 ```
 在网页中表示一组无顺序之分的列表
+
 ![2](htmlmage/norulelist.png)
+
 显示特点：
 - 列表的每一项前默认显示圆点标识
 - 样式一般用CSS来写
@@ -20,6 +22,7 @@
 > - li标签可以包含任意内容
 
 如：
+
 ```html
 <ul>
     <li>苹果</li>
@@ -38,7 +41,9 @@
     </li>
 </ul>
 ```
+
 一般用来布局
+
 ![3](htmlmage/buju.png)
 
 
@@ -52,8 +57,11 @@
     ...
 </ol>
 ```
+
 在网页中表示一组有顺序之分的列表
+
 ![4](htmlmage/rulelist.png)
+
 显示特点：
 - 列表的每一项前默认显示序号标识
 > 注意点：
@@ -75,14 +83,18 @@
     ...
 </dl>
 ```
+
 在网页的底部导航中通常会使用自定义列表实现
+
 ![5](htmlmage/autolist.png)
+
 显示特点：
 - dd前会默认显示缩进效果
 > 注意点：
 > - dl标签中只允许包含dt/dd标签
 > - dt/dd标签可以包含任意内容
 如：
+
 ```html
 <dl>
     <dt>帮助中心</dt>
@@ -91,6 +103,7 @@
     <dd>订单操作</dd>
 </dl>
 ```
+
 ![7](htmlmage/autolistshow.png)
 
 
@@ -109,8 +122,11 @@
     ...
 </table>
 ```
+
 在网页中以行+列的单元格的方式整齐展示和数据
+
 ![8](htmlmage/basebiaoqian.png)
+
 > 注意点：
 > - 标签的嵌套关系：table > tr > td 
 >- 表格的主要目的是用来显示特殊数据的
@@ -126,6 +142,7 @@
 ![10](htmlmage/tableshuxing.png)
 
 ![11](htmlmage/tableshuxingshow.png)
+
 > 注意点：
 > - 实际开发时针对于样式效果推荐用CSS设置
 
@@ -134,7 +151,9 @@
 
 ## 表格标题和表头单元格标签
 在表格中表示整体大标题和一列小标题
+
 ![12](htmlmage/biaotouintr.png)
+
 > 注意点：
 > - caption标签书写在table标签内部，只在表格里才有意义
 > - th标签书写在tr标签内部（用于替换td标签）
@@ -152,8 +171,11 @@
 
 ## 表格的结构标签
 让表格的内容结构分组，突出表格的不同部分（头部、主体、底部），使语义更加清晰
+
 ![14](htmlmage/jiegousign.png)
+
 ![15](htmlmage/jiegoushow.png)
+
 > 注意点：
 > - 表格结构标签内部用于包裹tr标签
 > - 表格的结构标签可以省略
@@ -182,7 +204,8 @@
 
 
 # 表单信息
-在HTML中，一个完整的表单通常由表单控件(也称为表单元素)、提示信息和表单域3个部分构成。
+在HTML中，一个完整的表单通常由表单控件(也称为表单元素)、提示信息和表单域3个部分构成
+
 ![17](htmlmage/biaodanzucheng.png)
 
 ## input系列标签
@@ -229,6 +252,7 @@ type属性值：radio
 常用属性：
 
 ![21](htmlmage/danxuanshuxing.png)
+
 > 注意点：
 > - name属性对于单选框有分组功能，主要作用就是区分不同的表单，在ajax和后台的时候必须使用
 > - 有相同name属性值的单选框为一组，一组中只能同时有一个被选中
@@ -263,11 +287,13 @@ type属性值：file
 <!-- 图片提交按钮 里面必须包含src属性 -->
 <input type="image" src="img/cat.gif" alt="">
 ```
+
 显示不同功能的按钮表单控件
 
 type属性值：
 
 ![24](htmlmage/anniushuxing.png)
+
 > 注意点：
 > - 如果需要实现以上按钮功能，需要配合form标签使用，form标签会把所有数据提交到后台
 > - form使用方法：用form标签把表单标签一起包裹起来即可
@@ -283,6 +309,7 @@ type属性值：
     <button>搜索</button> 
     <!-- 开发中一般用这种写法 -->
 ```
+
 显示用户点击的按钮
 
 type属性值（同input的按钮系列）：
@@ -313,6 +340,7 @@ type属性值（同input的按钮系列）：
 常见属性：
 - cols：规定了文本域内可见宽度
 - rows：规定了文本域内可见行数
+
 > 注意点：
 > - 右下角可以拖拽改变大小（实际开发中最好不要）
 > - 实际开发时针对于样式效果推荐用CSS设置
@@ -336,13 +364,16 @@ type属性值（同input的按钮系列）：
 1. 使用label标签把内容（如：文本）包裹起来
 2. 在表单标签上添加id属性
 3. 在label标签的for属性中设置对应的id属性值
+   
 ```html
 <input type="radio" name="sex" id="nv">
 <label for="nv">女</label>
 ```
+
 使用方法②：
 1. 直接使用label标签把内容（如：文本）和表单标签一起包裹起来
 2. 需要把label标签的for属性删除即可
+
 ```html
 <label>
     <input type="radio" name="marry" id="">
@@ -394,6 +425,8 @@ span标签：一行可以显示多个
 在HTML5新版本中，推出了一些有语义的布局标签供开发者使用，一般是在移动端使用
 
 ![28](htmlmage/yuyibiaoqian.png)
+
 ![29](htmlmage/yuyibiaoqianshow.png)
+
 > 注意点：
 > 以上标签显示特点和div一致，但是比div多了不同的语义

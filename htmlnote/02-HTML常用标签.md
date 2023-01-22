@@ -53,7 +53,9 @@ span 跨度，跨距;范围
 
 
 ## 文本格式化标签
+
 ![1](htmlmage/wenbengeshihua.png)
+
 实际开发中选择标签的原则：标签语义化,即：根据语义选择对应正确的标签
 - 标题，用h系列标签
 - 段落，用p标签
@@ -83,6 +85,7 @@ span 跨度，跨距;范围
 **```<img />```标记属性**
 
 ![2](htmlmage/imageshuxing.png)
+
 注意：
 - border会用css来做，一般在这不使用
 - 只设置width或height中的一个，另一个没设置的会自动等比例缩放（此时图片不会变形）
@@ -147,18 +150,21 @@ VSCode中路径的快捷操作？
 
 注意点：
 - 视频标签是HTML5中新增标签，老版本浏览器无法识别（兼容性问题）
+  
   ```html
   <video src="./img/video.mp4" controls autoplay muted>
         您的浏览器版本太低了，无法播放视频！
   </video>
     <!-- 无法播放时会显示该文字 -->
     ```
+   
 - 视频标签目前支持三种格式：MP4, WebM, 和 Ogg
 
 ## 链接标签
 ```html
 <a href="跳转目标" target="目的窗口弹出方式">文本或图像</a>
 ```
+
 ![4](htmlmage/linkshuxing.png)
 
 
@@ -197,6 +203,7 @@ VSCode中路径的快捷操作？
 **团队约定**
 
 注释位于代码的上面，单独一行
+
 ```html
 <!-- Comment Text -->
 <div>...</div>
@@ -214,6 +221,7 @@ VSCode中路径的快捷操作？
 2．使用<a href"=id名">链接文本</a>创建链接文本（被点击的）（拉关系）我也有一个姓毕的姥爷..
    <a href="#two">
 ```
+
 ![5](htmlmage/maodian.png)
 
 ## base标签
@@ -245,6 +253,7 @@ VSCode中路径的快捷操作？
 
 ## 特殊字符
 很难或者不方便直接使用的
+
 ![6](htmlmage/teshuzifu.png)
 
 ![7](htmlmage/zifushiti.png)
@@ -260,6 +269,7 @@ VSCode中路径的快捷操作？
 ```html
 <a href="#">more &gt;&gt;</a>
 ```
+
 不推荐:
 ```html
 <a href="#">more >> </ a>
