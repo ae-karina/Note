@@ -106,7 +106,9 @@ span 跨度，跨距;范围
 - 完整的网络地址：https://www.itcast.cn/2018czgw/images/logo.gif（了解）
 
 #### 相对路径
+
 ![3](htmlmage/roadstr.png)
+
 VSCode中路径的快捷操作？
 - 同级和下级目录：./ 之后选择即可
 - 上级目录：../ 之后选择即可
