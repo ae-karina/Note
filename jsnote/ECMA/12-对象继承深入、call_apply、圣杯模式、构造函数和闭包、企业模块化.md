@@ -117,7 +117,7 @@ console.log(student);  没法访问teacher的原型
 
 问题图解：
 
-![20](./jsimg/20-wt.png)
+![20](../jsimg/20-wt.png)
 
 ```js
 function Teacher() {
@@ -171,7 +171,7 @@ Student {name: 'Mr.Wang'}
 
 解决方法图解：
 
-![21](./jsimg/21-sb.png)
+![21](../jsimg/21-sb.png)
 
 ```js
 function Teacher() {
@@ -292,7 +292,7 @@ Student {name: 'Mr.Wang'}
 
 中心自适应  头尾等高  左右等宽
 
-![22](./jsimg/22-cs.png)
+![22](../jsimg/22-cs.png)
 
 css:
 
@@ -365,7 +365,7 @@ html:
 
 效果图：
 
-![23](./jsimg/23-jg.png)
+![23](../jsimg/23-jg.png)
 
 
 
@@ -759,11 +759,109 @@ var slider = new Slider({
 })();
 ```
 
-
+> 协同开发不等于插件开发
 # 作业
 
 打印一个参数以内能被3或5或7整除的数
 
 打印斐波那契数列的第N位
+
+```js
+window.onload = function () {
+  init();    //窗口加载完成之后打印
+}
+
+function init() {
+  console.log(initFb(10));
+  console.log(initDiv(100));
+}
+var initFb = (function () {
+  function fb(n) {
+    if (n <= 0) {
+      return 0;
+    }
+    if (n <= 2) {
+      return 1;
+    }
+    return fb(n - 1) + fb(n - 2);
+  }
+  return fb;
+})();
+
+var initDiv = (function () {   //先在全局用变量保存这个指向GO里面有些插件也这么写   模块化也叫插件的异类
+  function div(n) {
+    var arr = []; //用一个容器来接收
+    for (var i = 0; i <= n; i++) {
+      if (i % 3 === 0 || i % 5 === 0 || i % 7 === 0) {
+        arr.push(i); //往数组里面存数用push
+      }
+    }
+    return arr;
+  }
+
+  return div; //闭包的原理
+})();
+```
+
+这样写是把一个立即执行函数保存到一个变量，方便什么时候想执行就执行
+
+立即执行函数执行一遍就被销毁了，如果没有外界接收返回值的话，返回值将不存
+
+在所以说要用一个变量接收
+
+使用模块化开发的情况通常有：
+时间去驱动执行
+
+等待延迟执行
+
+**模块化开发的好处**
+
+1. 防止作用域污染  
+
+2. 创造自己独立的作用域空间
+
+return出来的函数保存在全局的GO里面
+
+立即执行函数的写法  一般是插件   出来就执行的   比如 轮播图
+
+```js
+插件标配写法
+;(function () {
+  var Test = function () {
+    //构造函数
+    // 函数声明  函数表达式
+  }
+
+  Test.prototype = {
+    //方法 属性
+  }
+
+  window.Test = Test; //构造函数保存到全局  外界能访问
+})
+
+```
+
+```js
+模块化写法
+var Test = (function () { //要执行的话  只能Test先执行一次
+  var Test = function () {
+
+  }
+
+  Test.prototype = {
+
+  }
+  return Test;
+})();
+```
+
+
+
+
+
+
+
+
+
 
 打印从0到一个数的累加值

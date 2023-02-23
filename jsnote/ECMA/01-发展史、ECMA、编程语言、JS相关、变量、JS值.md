@@ -303,16 +303,16 @@ object array function date RegExp
 
 数据从重新赋值不影响之前的
 ### 原始值
-![1](./jsimg/01-jc.png)
+![1](../jsimg/01-jc.png)
 
-![2](./jsimg/02-kb.png)
+![2](../jsimg/02-kb.png)
 
-![3](./jsimg/03-cf.png)
+![3](../jsimg/03-cf.png)
 
 ### 引用值
-![4](./jsimg/04-dn.png)
+![4](../jsimg/04-dn.png)
 
-![5](./jsimg/05-df.png)
+![5](../jsimg/05-df.png)
 
 
 一些js的运算
