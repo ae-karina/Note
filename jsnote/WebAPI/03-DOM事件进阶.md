@@ -29,7 +29,7 @@ DOM.addEventListener(事件类型，事件处理函数，是否使用捕获机�
 说明：
 - addEventListener第三个参数传入 `true`代表是捕获阶段触发（很少使用）
 - 若传入`false`代表冒泡阶段触发，默认就是`false`
-- 若是用 L0 事件监听，则只有冒泡阶段，没有捕
+- 若是用 L0 事件监听，则只有冒泡阶段，没有捕获阶段
 
 ```js
 const fa = document.querySelector('.father')
