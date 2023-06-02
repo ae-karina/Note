@@ -98,6 +98,14 @@ npm install
 npm run dev
 ```
 
+vite的设计中import xx from "./xx.vue"才是正确的导入方式，习惯了@vue/cli的加不加.vue后缀都会被正确识别，这一上来着实有点懵，而且尤雨溪也提到了之后版本的@vue/cli中也将不在支持无扩展名的vue导入，一天一个划水小知识点
+
+作者：Selicens
+链接：https://juejin.cn/post/6979482355413024798
+来源：稀土掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
 # 二、常用 Composition API
 
 官方文档: https://v3.cn.vuejs.org/guide/composition-api-introduction.html
